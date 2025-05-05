@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisky World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to Whisky World</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="whisky-guide.html">Whisky Guide</a></li>
+                <li><a href="tasting-tips.html">Tasting Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Discover the World of Whisky, 🥃 Let your journey begin!</h2>
+            <p>Explore the rich heritage, diverse flavors, and unique styles of whiskies from around the world.</p>
+            <hr>
+            <p>Sign-up your email below to recieve whisky news!</p>
+        </section>
+
+        <section>
+            <h3>Types of Whisky</h3>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-image-container">
+                    <img src="images/scotch.jpg" alt="Scotch Whisky">
+                    <div class="slide-caption">Scotch Whisky</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-image-container">
+                    <img src="images/bourbon.jpg" alt="Bourbon">
+                    <div class="slide-caption">Bourbon</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-image-container">
+                    <img src="images/irish.jpg" alt="Irish Whisky">
+                    <div class="slide-caption">Irish Whisky</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-image-container">
+                    <img src="images/japanese.jpg" alt="Japanese Whisky">
+                    <div class="slide-caption">Japanese Whisky</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+
+        <section id="whisky-facts">
+            <h3>Random Whisky Fact</h3>
+            <button id="factButton">Show Me a Fact</button>
+            <p id="factDisplay" style="margin-top: 10px;"></p>
+        </section>
+    </main>
+
+<!-- form -->
+<section id="contact">
+    <h3>Join our Whisky Club</h3>
+    <form id="clubForm" novalidate>
+        <label>
+            Name:
+            <input type="text" id="name" required>
+            <span class="error" id="nameError"></span>
+        </label>
+
+        <label>
+            Email:
+            <input type="email" id="email" required>
+            <span class="error" id="emailError"></span>
+        </label>
+
+        <label>
+            Favorite Whisky (Optional):
+            <input type="text" id="whisky">
+        </label>
+
+        <button type="submit">Join Now</button>
+    </form>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Whisky World. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
